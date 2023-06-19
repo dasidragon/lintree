@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dosya</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="loader">
+        <div class="loader__item"></div>
+    </div>
+
+    <div id="site">
+    <div class="profile">
+      <img class="profile__avatar" src="./assets/dosya.jpg" alt="" />
+      <h2>Dastan</h2>
+      <p>Web developer</p>
+    </div>
+
+    <nav>
+      <ul class="links">
+        <a href="https://www.instagram.com/dasidragon/" target="_blank">
+          <li><img src="./assets/instagram.png" alt="instagram" />Instagram</li>
+        </a>
+
+        <a href="https://t.me/jogan_karma" target="_blank">
+          <li><img src="./assets/telegram.png" alt="telegram" />Telegram</li>
+        </a>
+
+        <a href="https://www.tiktok.com/@jogan_karma" target="_blank">
+          <li><img src="./assets/tik-tok.png" alt="tik-tok" />Tik-Tok</li>
+        </a>
+
+        <a href="https://github.com/Dasihub" target="_blank">
+          <li><img src="./assets/github.png" alt="github" />GitHub</li>
+        </a>
+      </ul>
+    </nav>
+    </div>
+  </body>
+
+  <script>
+  const site = document.querySelector("#site");
+  const loader = document.querySelector(".loader");
+
+  window.addEventListener("load", () => {
+    site.style.display = "block";
+    loader.classList.add('loader_hide')
+  });
+  </script>
+</html>
