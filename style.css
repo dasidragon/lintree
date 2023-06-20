@@ -39,6 +39,11 @@ a {
   gap: 16px;
 }
 
+.links a {
+  color: black;
+  font-weight: 500;
+}
+
 .links li {
   background-color: white;
   display: flex;
