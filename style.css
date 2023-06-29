@@ -64,6 +64,7 @@ a {
 .links a {
   width: 100%;
   max-width: 680px;
+  text-align: center;
 }
 
 .links li img {
