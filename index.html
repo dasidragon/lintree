@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dosya</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dosya</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/smoke.css" />
+  <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <div id="site">
+    <canvas></canvas>
+
     <div class="loader">
-        <div class="loader__item"></div>
+      <div class="loader__item"></div>
     </div>
 
-    <div id="site">
-    <div class="profile">
-      <img class="profile__avatar" src="./assets/dosya.jpg" alt="" />
-      <h2>Dastan</h2>
-      <p>Web developer</p>
-    </div>
+    <!-- <div class="profile"> -->
+    <img class="profile__avatar" src="./assets/dosya.jpg" alt="" />
+    <h2 class="titles" style="top: calc(32px + 96px + 16px);">Dastan</h2>
+    <p class="titles" style="top: calc(32px + 96px + 16px + 29px);">Web developer</p>
+  </div>
 
-    <nav>
-      <ul class="links">
-        <a href="https://www.instagram.com/dasidragon/" target="_blank">
-          <li><img src="./assets/instagram.png" alt="instagram" />Основной Instagram аккаунт <br> @dasidragon</li>
-        </a>
+  <a href="https://www.instagram.com/dasidragon/" target="_blank" class="links" style="top: 225px;">
+    <!-- <div class="links"> -->
+    <div><img src="./assets/instagram.png" alt="instagram" />Instagram</div>
+    <!-- </div> -->
+  </a>
 
-        <a href="https://www.instagram.com/jogan_karma/" target="_blank">
-          <li><img src="./assets/instagram.png" alt="instagram" />Второй Instagram аккаунт <br> @jogan_karma</li>
-        </a>
+  <a href="https://t.me/jogan_limba" target="_blank" class="links" style="top: 301px;">
+    <div><img src="./assets/telegram.png" alt="telegram" />Telegram</div>
+  </a>
 
-        <a href="https://t.me/jogan_limba" target="_blank">
-          <li><img src="./assets/telegram.png" alt="telegram" />Telegram</li>
-        </a>
+  <a href="https://www.tiktok.com/@jogan_karma" target="_blank" class="links" style="top: 377px;">
+    <div><img src="./assets/tik-tok.png" alt="tik-tok" />Tik-Tok</div>
+  </a>
 
-        <a href="https://www.tiktok.com/@jogan_karma" target="_blank">
-          <li><img src="./assets/tik-tok.png" alt="tik-tok" />Tik-Tok</li>
-        </a>
+  <a href="https://github.com/Dasihub" target="_blank" class="links" style="top: 453px;">
+    <div><img src="./assets/github.png" alt="github" />GitHub</div>
+  </a>
 
-        <a href="https://github.com/Dasihub" target="_blank">
-          <li><img src="./assets/github.png" alt="github" />GitHub</li>
-        </a>
-      </ul>
-    </nav>
-    </div>
-  </body>
+  <!-- <nav style="position: absolute; z-index: 1; top: calc(32px + 96px + 16px + 29px + 20px); left: 50%; transform: translate(-50%); max-width: 690px; width: 100%;"> -->
+  <!-- <ul class="links"> -->
+  <!-- <div class="links">
+    <a href="https://www.instagram.com/dasidragon/" target="_blank">
+      <div><img src="./assets/instagram.png" alt="instagram" />Instagram @dasidragon</di>
+    </a>
+  </div>
 
-  <script>
+  <a href="https://www.instagram.com/jogan_karma/" target="_blank">
+    <li><img src="./assets/instagram.png" alt="instagram" />Второй Instagram аккаунт <br> @jogan_karma</li>
+  </a>
+
+  <div class="links">
+    <a href="https://t.me/jogan_limba" target="_blank">
+      <div><img src="./assets/telegram.png" alt="telegram" />Telegram</div>
+    </a>
+  </div>
+
+  <div class="links">
+    <a href="https://www.tiktok.com/@jogan_karma" target="_blank">
+      <div><img src="./assets/tik-tok.png" alt="tik-tok" />Tik-Tok</div>
+    </a>
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/Dasihub" target="_blank">
+      <div><img src="./assets/github.png" alt="github" />GitHub</div>
+    </a>
+  </div> -->
+  <!-- </ul> -->
+  <!-- </nav> -->
+  <!-- </div> -->
+</body>
+
+<script>
   const site = document.querySelector("#site");
   const loader = document.querySelector(".loader");
 
@@ -58,5 +88,8 @@
     site.style.display = "block";
     loader.classList.add('loader_hide')
   });
-  </script>
+</script>
+
+<script src="./smoke.js"></script>
+
 </html>
