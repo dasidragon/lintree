@@ -45,7 +45,7 @@ a {
   color: black;
   display: flex;
   width: calc(100% - 32px);
-  max-width: 680px;
+  max-width: 480px;
   border-radius: 8px;
   justify-content: center;
   left: 50%;
