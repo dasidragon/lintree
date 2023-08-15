@@ -26,6 +26,8 @@ a {
   width: 96px;
   height: 96px;
   border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
   z-index: 1;
   top: 32px;
   left: 50%;
@@ -37,6 +39,8 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
 }
 
 .links {
